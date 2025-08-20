@@ -79,24 +79,14 @@ export default function About() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
             <div>
               <h2 className="mb-6 text-3xl font-bold text-foreground">
-                Notre histoire
+                Qui sommes nous ?
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Fondée avec la vision de contribuer au développement énergétique de la Guinée, 
-                  GUINEA-ENERGY s'est imposée comme un acteur incontournable dans le domaine 
-                  des infrastructures électriques et des énergies renouvelables.
-                </p>
-                <p>
-                  Forte de plus de 10 années d'expérience, notre entreprise a su développer 
-                  une expertise reconnue dans l'installation de réseaux électriques, 
-                  les systèmes photovoltaïques, la formation professionnelle et la fourniture 
-                  d'équipements de qualité.
-                </p>
-                <p>
-                  Basée à Conakry (Nongo-Carrefour Télémilé), nous intervenons sur l'ensemble 
-                  du territoire guinéen et ambitionnons d'étendre notre présence dans la 
-                  sous-région ouest-africaine.
+                  GUINEA ENERGY est une entreprise guinéenne engagée dans le développement, 
+                  la production et la fourniture de solutions énergétiques fiables, durables 
+                  et accessibles, afin de contribuer à la sécurité énergétique et à la croissance 
+                  socio-économique du pays.
                 </p>
               </div>
             </div>
@@ -141,10 +131,9 @@ export default function About() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Devenir le leader ouest-africain des solutions énergétiques durables en 
-                  contribuant activement à l'électrification rurale et urbaine, tout en 
-                  promouvant l'adoption des énergies renouvelables pour un avenir énergétique 
-                  propre et accessible à tous.
+                  Sa vision est de devenir un acteur de référence en Afrique de l'Ouest dans la 
+                  transition énergétique, en favorisant l'intégration des énergies renouvelables 
+                  et l'efficacité énergétique pour tous.
                 </p>
               </CardContent>
             </Card>
@@ -160,8 +149,9 @@ export default function About() {
               Nos valeurs
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-              Les principes qui guident notre action quotidienne et notre engagement 
-              envers nos clients et partenaires
+              Ses valeurs reposent sur l'innovation, l'excellence opérationnelle, l'intégrité, 
+              le respect de l'environnement et la responsabilité sociale, avec pour objectif de 
+              bâtir un futur énergétique plus sûr, inclusif et respectueux des générations futures.
             </p>
           </div>
           

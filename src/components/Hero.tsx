@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="mx-auto max-w-4xl">
           <div className="mb-8 flex justify-center">
             <img 
-              src="/lovable-uploads/42f8a1ac-2def-4d4e-9546-1af8b3191ad3.png" 
+              src="/lovable-uploads/96a98c9d-834a-4708-b939-a82aa3b057d8.png" 
               alt="Guinea Energy Logo" 
               className="h-32 w-auto"
             />
