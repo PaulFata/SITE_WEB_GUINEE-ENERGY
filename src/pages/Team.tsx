@@ -173,15 +173,16 @@ export default function Team() {
             </p>
           </div>
 
-          <div className="grid gap-8 lg:grid-cols-3">
+          <div className="grid gap-8 lg:grid-cols-3 stagger-animation">
             {leadership.map((leader, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-square overflow-hidden">
+              <Card key={index} className="overflow-hidden card-hover group">
+                <div className="aspect-square overflow-hidden relative">
                   <img
                     src={leader.image}
                     alt={leader.name}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <CardHeader className="text-center">
                   <h3 className="text-xl font-bold text-foreground">{leader.name}</h3>
@@ -223,12 +224,12 @@ export default function Team() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 stagger-animation">
             {team.map((member, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <Card key={index} className="overflow-hidden card-hover group">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
-                    <Avatar className="h-16 w-16">
+                    <Avatar className="h-16 w-16 group-hover:scale-110 transition-transform duration-300">
                       <AvatarImage src={member.image} alt={member.name} />
                       <AvatarFallback>
                         {member.name.split(' ').map(n => n[0]).join('')}

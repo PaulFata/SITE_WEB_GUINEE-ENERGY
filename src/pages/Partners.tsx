@@ -201,15 +201,16 @@ export default function Partners() {
                 </p>
               </div>
 
-              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 stagger-animation">
                 {category.partners.map((partner, partnerIndex) => (
-                  <Card key={partnerIndex} className="overflow-hidden hover:shadow-lg transition-shadow">
-                    <div className="aspect-video overflow-hidden bg-muted/30 flex items-center justify-center p-6">
+                  <Card key={partnerIndex} className="overflow-hidden card-hover group">
+                    <div className="aspect-video overflow-hidden bg-gradient-to-br from-muted/20 to-muted/40 flex items-center justify-center p-6 relative">
                       <img
                         src={partner.logo}
                         alt={`Logo ${partner.name}`}
-                        className="max-h-full max-w-full object-contain"
+                        className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-300"
                       />
+                      <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <CardHeader>
                       <div className="flex items-center justify-between mb-2">
@@ -241,14 +242,14 @@ export default function Partners() {
             </p>
           </div>
 
-          <div className="grid gap-8 lg:grid-cols-3">
+          <div className="grid gap-8 lg:grid-cols-3 stagger-animation">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="relative hover:shadow-lg transition-shadow">
+              <Card key={index} className="relative card-hover">
                 <CardHeader>
                   <div className="flex items-center space-x-1 mb-4">
                     {renderStars(testimonial.rating)}
                   </div>
-                  <Quote className="h-8 w-8 text-primary/30 absolute top-6 right-6" />
+                  <Quote className="h-8 w-8 text-primary/30 absolute top-6 right-6 animate-float" />
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <blockquote className="text-muted-foreground italic">

@@ -119,10 +119,10 @@ export default function Services() {
         <div className="container px-4">
           <div className="grid gap-8 lg:gap-12">
             {services.map((service, index) => (
-              <Card key={index} className="overflow-hidden">
+              <Card key={index} className="service-card hover-lift">
                 <div className="grid gap-8 lg:grid-cols-3">
                   <div className="lg:col-span-1 p-6">
-                    <div className={`mb-6 flex h-20 w-20 items-center justify-center rounded-full ${
+                    <div className={`mb-6 flex h-20 w-20 items-center justify-center rounded-full icon-bounce ${
                       service.color === 'primary' ? 'bg-primary/10 text-primary' : 'bg-secondary/10 text-secondary'
                     }`}>
                       {service.icon}
@@ -130,11 +130,11 @@ export default function Services() {
                     <CardTitle className="mb-4 text-2xl">{service.title}</CardTitle>
                     <p className="text-muted-foreground">{service.description}</p>
                   </div>
-                  <div className="lg:col-span-2 p-6 bg-muted/30">
+                  <div className="lg:col-span-2 p-6 bg-gradient-to-br from-muted/20 to-muted/40 backdrop-blur">
                     <h4 className="mb-4 text-lg font-semibold">Nos prestations :</h4>
-                    <div className="grid gap-3 sm:grid-cols-2">
+                    <div className="grid gap-3 sm:grid-cols-2 stagger-animation">
                       {service.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-center space-x-2">
+                        <div key={featureIndex} className="flex items-center space-x-2 hover-scale">
                           <CheckCircle className={`h-5 w-5 flex-shrink-0 ${
                             service.color === 'primary' ? 'text-primary' : 'text-secondary'
                           }`} />
@@ -162,12 +162,12 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 stagger-animation">
             {processSteps.map((step, index) => (
-              <Card key={index} className="relative overflow-hidden hover:shadow-lg transition-shadow">
+              <Card key={index} className="relative overflow-hidden card-hover">
                 <CardHeader>
                   <div className="flex items-center space-x-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground text-lg font-bold">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground text-lg font-bold animate-pulse-soft">
                       {step.step}
                     </div>
                     <CardTitle className="text-xl">{step.title}</CardTitle>
@@ -178,7 +178,7 @@ export default function Services() {
                 </CardContent>
                 {index < processSteps.length - 1 && (
                   <div className="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2">
-                    <ArrowRight className="h-8 w-8 text-muted-foreground" />
+                    <ArrowRight className="h-8 w-8 text-muted-foreground animate-bounce-subtle" />
                   </div>
                 )}
               </Card>

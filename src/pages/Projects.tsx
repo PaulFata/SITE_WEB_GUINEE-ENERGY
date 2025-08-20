@@ -127,15 +127,16 @@ export default function Projects() {
       {/* Projects Grid */}
       <section className="py-20">
         <div className="container px-4">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 stagger-animation">
             {filteredProjects.map((project) => (
-              <Card key={project.id} className="overflow-hidden hover:shadow-lg transition-shadow group">
-                <div className="aspect-video overflow-hidden">
+              <Card key={project.id} className="overflow-hidden card-hover group">
+                <div className="aspect-video overflow-hidden relative">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <CardHeader>
                   <div className="flex items-center justify-between mb-2">
@@ -162,9 +163,9 @@ export default function Projects() {
                     </div>
                   </div>
                   <div className="pt-2">
-                    <Button variant="outline" size="sm" className="w-full group">
+                    <Button variant="outline" size="sm" className="w-full group hover-glow">
                       Voir les détails
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-2" />
                     </Button>
                   </div>
                 </CardContent>
@@ -192,24 +193,24 @@ export default function Projects() {
             </p>
           </div>
           
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="text-center">
-              <div className="mb-4 text-4xl font-bold md:text-5xl">100+</div>
+           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 stagger-animation">
+            <div className="text-center hover-scale">
+              <div className="mb-4 text-4xl font-bold md:text-5xl gradient-text animate-glow">100+</div>
               <div className="text-lg font-semibold mb-2">Projets réalisés</div>
               <div className="text-sm opacity-80">Infrastructures et installations</div>
             </div>
-            <div className="text-center">
-              <div className="mb-4 text-4xl font-bold md:text-5xl">15</div>
+            <div className="text-center hover-scale">
+              <div className="mb-4 text-4xl font-bold md:text-5xl gradient-text animate-glow">15</div>
               <div className="text-lg font-semibold mb-2">Localités électrifiées</div>
               <div className="text-sm opacity-80">Accès à l'énergie étendu</div>
             </div>
-            <div className="text-center">
-              <div className="mb-4 text-4xl font-bold md:text-5xl">5MW+</div>
+            <div className="text-center hover-scale">
+              <div className="mb-4 text-4xl font-bold md:text-5xl gradient-text animate-glow">5MW+</div>
               <div className="text-lg font-semibold mb-2">Capacité solaire installée</div>
               <div className="text-sm opacity-80">Énergie propre et renouvelable</div>
             </div>
-            <div className="text-center">
-              <div className="mb-4 text-4xl font-bold md:text-5xl">10k+</div>
+            <div className="text-center hover-scale">
+              <div className="mb-4 text-4xl font-bold md:text-5xl gradient-text animate-glow">10k+</div>
               <div className="text-lg font-semibold mb-2">Bénéficiaires</div>
               <div className="text-sm opacity-80">Foyers et entreprises connectés</div>
             </div>
