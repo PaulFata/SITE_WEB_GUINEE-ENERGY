@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const heroImages = [
-  "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1200&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1200&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1200&h=600&fit=crop"
+  "./assets/solaire.jpg",
+  "./assets/tension.jpg",
+  "./assets/enfant.jpg",
+  "./assets/eng.jpg",
 ];
 
 export default function Hero() {
@@ -36,7 +36,7 @@ export default function Hero() {
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentImage ? 'opacity-20' : 'opacity-0'
+              index === currentImage ? 'opacity-50' : 'opacity-0'
             }`}
           >
             <img 
@@ -70,7 +70,7 @@ export default function Hero() {
         <div className="mx-auto max-w-4xl">
           <div className="mb-8 flex justify-center animate-bounce-in">
             <img 
-              src="/lovable-uploads/96a98c9d-834a-4708-b939-a82aa3b057d8.png" 
+              src="./assets/logo2.png" 
               alt="Guinea Energy Logo" 
               className="h-32 w-auto animate-float"
             />

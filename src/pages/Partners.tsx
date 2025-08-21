@@ -37,22 +37,46 @@ const partnerCategories = [
     description: "Fournisseurs de technologies et équipements",
     partners: [
       {
-        name: "Schneider Electric",
-        logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop",
+        name: "EDG",
+        logo: "./assets/edg.png",
         category: "Équipements Électriques",
         description: "Fournisseur privilégié d'équipements de distribution et de protection électrique",
         collaboration: "Depuis 2019"
       },
       {
-        name: "Canadian Solar", 
-        logo: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=200&h=100&fit=crop",
+        name: "engie", 
+        logo: "./assets/engie.png",
         category: "Panneaux Solaires",
         description: "Partenaire stratégique pour la fourniture de panneaux photovoltaïques haute performance",
         collaboration: "Depuis 2020"
       },
       {
-        name: "ABB Group",
-        logo: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=200&h=100&fit=crop",
+        name: "Cegelec",
+        logo: "./assets/cegelec.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      }
+      ,
+      {
+        name: "TODO",
+        logo: "./assets/todo.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      }
+      ,
+      {
+        name: "Power Transmission ",
+        logo: "./assets/power.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      }
+      ,
+      {
+        name: "KAMA",
+        logo: "./assets/kama.png",
         category: "Solutions Industrielles",
         description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
         collaboration: "Depuis 2021"

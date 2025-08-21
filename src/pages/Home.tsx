@@ -25,7 +25,7 @@ const featuredProjects = [
   {
     title: "Électrification de 15 localités",
     description: "Extension du réseau électrique pour améliorer l'accès à l'énergie",
-    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop",
+    image: "./assets/ter.png",
     location: "Kouroussa",
     date: "2023",
     category: "Électrification"
