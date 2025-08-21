@@ -5,26 +5,26 @@ import { Mail, Linkedin, Phone } from "lucide-react";
 
 const leadership = [
   {
-    name: "Mamadou DIALLO",
+    name: "MOUSSA FOFANA",
     role: "Directeur Général",
     department: "Direction",
     bio: "Ingénieur électricien avec plus de 15 ans d'expérience dans le secteur énergétique africain. Visionnaire du développement durable en Guinée.",
     quote: "Notre mission est de démocratiser l'accès à l'énergie pour tous les Guinéens.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
-    email: "m.diallo@guinea-energy.gn",
-    phone: "+224 622 00 00 01",
-    linkedin: "mamadou-diallo-energy"
+    email: "info@guinea–energy.com ",
+    phone: "+224 629 16 21 21",
+    linkedin: "Moussa Fofana"
   },
   {
-    name: "Aïcha BARRY",
-    role: "Directrice Technique",
-    department: "Technique",
-    bio: "Spécialiste en énergies renouvelables, diplômée en génie électrique. Expert en systèmes photovoltaïques et réseaux intelligents.",
+    name: "PAUL FATA MARA",
+    role: "Responsable IT & Innovation",
+    department: "Digitalisation",
+    bio: "Ingénieur en génie logiciel, sofware developper et  réseaux intelligents.",
     quote: "L'innovation technologique est la clé de notre transition énergétique.",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b5bc?w=400&h=400&fit=crop",
-    email: "a.barry@guinea-energy.gn",
-    phone: "+224 622 00 00 02",
-    linkedin: "aicha-barry-tech"
+    image: "./assets/fata.jpeg",
+    email: "fatamara001@guinea-energy.gn",
+    phone: "+224 621 56 08 79",
+    linkedin: "Paul Fata Mara"
   },
   {
     name: "Ibrahima CAMARA",
@@ -42,7 +42,7 @@ const leadership = [
 const team = [
   {
     name: "Fatoumata SOUMAH",
-    role: "Ingénieure Projets Solaires",
+    role: "Assistance de Direction",
     department: "Technique",
     speciality: "Photovoltaïque",
     experience: "8 ans",
@@ -50,7 +50,7 @@ const team = [
   },
   {
     name: "Mohamed KOUROUMA",
-    role: "Chef de Projets Électrification",
+    role: "Responsable Logistique",
     department: "Technique", 
     speciality: "Réseaux électriques",
     experience: "12 ans",
@@ -115,11 +115,11 @@ const team = [
 ];
 
 const departments = [
-  { name: "Direction", count: leadership.length, color: "primary" },
-  { name: "Technique", count: team.filter(m => m.department === "Technique").length + 1, color: "secondary" },
-  { name: "Commercial", count: team.filter(m => m.department === "Commercial").length + 1, color: "primary" },
-  { name: "Formation", count: team.filter(m => m.department === "Formation").length, color: "secondary" },
-  { name: "Support", count: team.filter(m => ["Qualité", "HSE", "Finance"].includes(m.department)).length, color: "primary" }
+  { name: "Direction", count: 1, color: "primary" },
+  { name: "Technique", count: 2, color: "secondary" },
+  { name: "Commercial", count: 3, color: "primary" },
+  { name: "Formation", count: 4, color: "secondary" },
+  { name: "Support", count: 5, color: "primary" }
 ];
 
 export default function Team() {
