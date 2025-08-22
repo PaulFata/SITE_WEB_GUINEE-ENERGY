@@ -19,7 +19,11 @@ const values = [
     description: "Nous travaillons en partenariat étroit avec nos clients pour garantir le succès de chaque projet."
   },
   {
-    icon: <Zap className="h-8 w-8" />,
+    icon: <img 
+             src="./assets/innovation.png" 
+              alt="Infrastructures" 
+              className="h-10 w-10 object-contain animate-glow"
+            />,
     title: "Innovation",
     description: "Adoption des technologies les plus récentes pour des solutions énergétiques durables et efficaces."
   }
@@ -65,16 +69,16 @@ export default function About() {
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
               Qui sommes-nous ?
             </h1>
-             <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-6xl animate-slide-in-left">
+            <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-6xl animate-slide-in-left">
             <div className="mb-4 flex justify-center animate-bounce-in">
-            <img 
-              src="./assets/logo3.png" 
-              alt="Guinea Energy Logo" 
-              className="h-40 w-auto animate-float"
-            />
-          </div>
-          
+              <img 
+                src="./assets/logo3.png" 
+                alt="Guinea Energy Logo" 
+                className="h-20 sm:h-32 md:h-40 w-auto animate-float"
+              />
+            </div>
           </h1>
+
           </div>
         </div>
       </section>

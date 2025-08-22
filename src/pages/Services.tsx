@@ -6,7 +6,11 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-    icon: <Zap className="h-12 w-12" />,
+    icon: <img 
+                src="./assets/infrac.jpg" 
+                alt="Logo infrastructure" 
+                className="h-20 sm:h-32 md:h-40 w-auto animate-float"
+              />,
     title: "Infrastructures électriques",
     description: "Installation, maintenance et réhabilitation de réseaux électriques haute et basse tension",
     features: [

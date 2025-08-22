@@ -2,34 +2,122 @@ import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, MapPin, Calendar, Users, Award } from "lucide-react";
+import { ArrowRight,Handshake,Building2, MapPin, Calendar, Users, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const featuredProjects = [
+
+const partnerCategories = [
+  
   {
-    title: "Assemblage et levage pylônes 225 kV",
-    description: "Installation de pylônes haute tension pour renforcer le réseau électrique national",
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop",
-    location: "Conakry - Kindia",
-    date: "2024",
-    category: "Infrastructure"
+    title: "Nos references",
+    icon: <Handshake className="h-8 w-8 text-primary" />,
+    description: "ILS NOUS ONT FAIT CONFIANCE",
+    partners: [
+      {
+        name: "EDG",
+        logo: "./assets/edg2.png",
+        category: "Équipements Électriques",
+        description: "Fournisseur privilégié d'équipements de distribution et de protection électrique",
+        collaboration: "Depuis 2019"
+      },
+      {
+        name: "Cwe", 
+        logo: "./assets/we.png",
+        category: "Panneaux Solaires",
+        description: "Partenaire stratégique pour la fourniture de panneaux photovoltaïques haute performance",
+        collaboration: "Depuis 2020"
+      },
+      {
+        name: "SUMEC",
+        logo: "./assets/sumec.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      }
+      ,
+      {
+        name: "enGie",
+        logo: "./assets/engie2.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      }
+      ,
+      {
+        name: "Cegelec ",
+        logo: "./assets/cegelec.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      }
+      ,
+      {
+        name: "G.E.C.I",
+        logo: "./assets/geci.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      },
+
+      {
+        name: "TOPO GUINEE",
+        logo: "./assets/topo.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      },
+      {
+        name: "KAMA Sa",
+        logo: "./assets/kama.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      },
+      {
+        name: "POWER TRANSMISSION LIMITED",
+        logo: "./assets/power.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      }
+    ]
   },
+
+  
+];
+
+const filliale = [
   {
-    title: "Installation solaire à Macenta",
-    description: "Système photovoltaïque pour zones militaires et communautés locales",
-    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&h=600&fit=crop",
-    location: "Macenta",
-    date: "2023",
-    category: "Solaire"
+    title: "Nos filiales",
+    icon: <Building2 className="h-8 w-8" />,
+    description: "Ils participent activement à la réalisation de nos projets énergétiques",
+    partners: [
+      {
+        name: "Pôles Factory",
+        logo: "./assets/FF01.jpg",
+        
+        
+      },
+      {
+        name: "Energiv", 
+        logo: "./assets/FF02.jpg",
+       
+      },
+      {
+        name: "elec-Rek", 
+        logo: "./assets/FF03.jpg",
+       
+      },
+      {
+        name: "Réseaux", 
+        logo: "./assets/FF04.jpg",
+       
+      },
+    
+    ]
   },
-  {
-    title: "Électrification de 15 localités",
-    description: "Extension du réseau électrique pour améliorer l'accès à l'énergie",
-    image: "./assets/ter.png",
-    location: "Kouroussa",
-    date: "2023",
-    category: "Électrification"
-  }
+
+  
 ];
 
 const stats = [
@@ -75,61 +163,90 @@ export default function Home() {
 </section>
 
 
-
-
-      {/* Featured Projects */}
-      <section className="py-20">
-        <div className="container px-4">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
-              Nos réalisations phares
-            </h2>
-            <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-              Découvrez quelques-uns de nos projets les plus impactants pour le développement énergétique de la Guinée
-            </p>
-          </div>
-          
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {featuredProjects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-video overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="h-full w-full object-cover transition-transform hover:scale-105"
-                  />
-                </div>
-                <CardHeader>
-                  <div className="flex items-center justify-between mb-2">
-                    <Badge variant="secondary">{project.category}</Badge>
-                    <div className="flex items-center text-sm text-muted-foreground">
-                      <Calendar className="mr-1 h-4 w-4" />
-                      {project.date}
+           {/* Nos partenaires */}
+            <section className="py-5">
+              <div className="container px-4">
+                {partnerCategories.map((category, categoryIndex) => (
+                  <div key={categoryIndex} >
+                    <div className="mb-12 text-center bg-white">
+                      <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        {category.icon}
+                      </div>
+                      <h2 className="mb-4 text-3xl font-bold text-foreground">
+                        {category.title}
+                      </h2>
+                      <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+                        {category.description}
+                      </p>
+                    </div>
+      
+                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 stagger-animation">
+                      {category.partners.map((partner, partnerIndex) => (
+                        <Card key={partnerIndex} className="overflow-hidden card-hover group">
+                          <div className="aspect-video overflow-hidden bg-gradient-to-br from-muted/20 to-muted/40 flex items-center justify-center p-6 relative">
+                            <img
+                              src={partner.logo}
+                              alt={`Logo ${partner.name}`}
+                              className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                          </div>
+                          <CardHeader>
+                            
+                            <CardTitle className="text-xl">{partner.name}</CardTitle>
+                          </CardHeader>
+                      
+                        </Card>
+                      ))}
                     </div>
                   </div>
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
-                  <CardDescription className="flex items-center">
-                    <MapPin className="mr-1 h-4 w-4" />
-                    {project.location}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{project.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+                ))}
+              </div>
+            </section>
+             {/* Nos filiales */}
+           <section className="py-5 bg-white">
+  <div className="container px-4">
+    {filliale.map((category, categoryIndex) => (
+      <div key={categoryIndex}>
+        {/* En-tête catégorie */}
+        <div className="mb-12 text-center">
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+            {category.icon}
           </div>
-          
-          <div className="mt-12 text-center">
-            <Button asChild size="lg">
-              <Link to="/projects">
-                Voir toutes nos réalisations
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
+          <h2 className="mb-4 text-3xl font-bold text-foreground">
+            {category.title}
+          </h2>
+          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+            {category.description}
+          </p>
         </div>
-      </section>
+
+        {/* Cartes filiales */}
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 stagger-animation">
+          {category.partners.map((partner, partnerIndex) => (
+            <Card key={partnerIndex} className="overflow-hidden card-hover group">
+              <div className="aspect-video overflow-hidden bg-gradient-to-br from-muted/20 to-muted/40 flex items-center justify-center p-6 relative">
+                <img
+                  src={partner.logo}
+                  alt={`Logo ${partner.name}`}
+                  className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <CardHeader>
+                <CardTitle className="text-xl">{partner.name}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">{partner.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Services Overview */}
       <section className="py-20 bg-muted/30">
@@ -144,95 +261,119 @@ export default function Home() {
           </div>
           
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="mx-auto mb-4 flex h-12 w-16 items-center justify-center rounded-full bg-primary/10">
-                   <img 
-                      src="./assets/infrac.jpg" 
-                      alt="Infrastructures" 
-                      className="h-10 w-10 object-contain animate-glow"
-                    />
-                </div>
-                <CardTitle>Infrastructures électriques</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Installation et maintenance de réseaux électriques haute et basse tension
-                </p>
-              </CardContent>
-            </Card>
+            <Link  to="/services">
+                <Card className="text-center hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="mx-auto mb-4 flex h-12 w-16 items-center justify-center rounded-full bg-primary/10">
+                      <img 
+                          src="./assets/infrac.jpg" 
+                          alt="Infrastructures" 
+                          className="h-10 w-10 object-contain animate-glow"
+                        />
+                    </div>
+                    <CardTitle>Infrastructures électriques</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      Installation et maintenance de réseaux électriques haute et basse tension
+                    </p>
+                  </CardContent>
+                </Card>
+            </Link>
             
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
-                 <img 
-                    src="./assets/solaire.png" 
-                    alt="Infrastructures" 
-                    className="h-10 w-10 object-contain animate-glow"
-                  />
-                </div>
-                <CardTitle>Systèmes solaires</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Conception et installation de solutions photovoltaïques sur mesure
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                 <img 
-                      src="./assets/formation.png" 
-                      alt="Infrastructures" 
-                      className="h-10 w-10 object-contain animate-glow"
-                    />
-                </div>
-                <CardTitle>Formation</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Formation professionnelle en électricité et énergies renouvelables
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
-                 <img 
-                      src="./assets/outils.png" 
-                      alt="Infrastructures" 
-                      className="h-10 w-10 object-contain animate-glow"
-                    />
-                </div>
-                <CardTitle>Fourniture</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Fourniture d'équipements électriques et matériels de qualité
-                </p>
-              </CardContent>
-            </Card>
 
-             <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
-                 <img 
-                      src="./assets/innovation.png" 
-                      alt="Infrastructures" 
-                      className="h-10 w-10 object-contain animate-glow"
-                    />
-                </div>
-                <CardTitle>Innovation</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Digitalisation des systèmes de gestions 
-                </p>
-              </CardContent>
-            </Card>
+
+            <Link  to="/services">
+                <Card className="text-center hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
+                    <img 
+                        src="./assets/solaire.png" 
+                        alt="Infrastructures" 
+                        className="h-10 w-10 object-contain animate-glow"
+                      />
+                    </div>
+                    <CardTitle>Systèmes solaires</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      Conception et installation de solutions photovoltaïques sur mesure
+                    </p>
+                  </CardContent>
+              </Card>
+            </Link>
+
+            
+            
+           <Link  to="/services">
+                <Card className="text-center hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                    <img 
+                          src="./assets/formation.png" 
+                          alt="Infrastructures" 
+                          className="h-10 w-10 object-contain animate-glow"
+                        />
+                    </div>
+                    <CardTitle>Formation</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      Formation professionnelle en électricité et énergies renouvelables
+                    </p>
+                  </CardContent>
+                </Card>
+            </Link>
+
+            
+            
+          
+
+            <Link  to="/services">
+                    <Card className="text-center hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
+                    <img 
+                          src="./assets/outils.png" 
+                          alt="Infrastructures" 
+                          className="h-10 w-10 object-contain animate-glow"
+                        />
+                    </div>
+                    <CardTitle>Fourniture</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      Fourniture d'équipements électriques et matériels de qualité
+                    </p>
+                  </CardContent>
+                </Card>
+            </Link>
+
+
+
+            
+
+             <Link  to="/services">
+                    <Card className="text-center hover:shadow-lg transition-shadow">
+                    <CardHeader>
+                      <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
+                      <img 
+                            src="./assets/innovation.png" 
+                            alt="Infrastructures" 
+                            className="h-10 w-10 object-contain animate-glow"
+                          />
+                      </div>
+                      <CardTitle>Innovation</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">
+                        Digitalisation des systèmes de gestions 
+                      </p>
+                    </CardContent>
+                  </Card>
+            </Link>
+
+             
           </div>
           
           <div className="mt-12 text-center">

@@ -38,7 +38,7 @@ const partnerCategories = [
     partners: [
       {
         name: "EDG",
-        logo: "./assets/edg.png",
+        logo: "./assets/edg2.png",
         category: "Équipements Électriques",
         description: "Fournisseur privilégié d'équipements de distribution et de protection électrique",
         collaboration: "Depuis 2019"

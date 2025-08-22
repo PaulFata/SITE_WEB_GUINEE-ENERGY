@@ -49,20 +49,24 @@ export default function Hero() {
          
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-6xl animate-slide-in-left">
             <div className="mb-4 flex justify-center animate-bounce-in">
-            <img 
-              src="./assets/logo3.png" 
-              alt="Guinea Energy Logo" 
-              className="h-40 w-auto animate-float"
-            />
-          </div>
-          
+              <img 
+                src="./assets/logo3.png" 
+                alt="Guinea Energy Logo" 
+                className="h-20 sm:h-32 md:h-40 w-auto animate-float"
+              />
+            </div>
           </h1>
+
           
           <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground sm:text-xl animate-fade-in-up animate-delay-300">
-            L'assurance de l'accessibilité et de la sécurité énergétique. 
-            Spécialistes en infrastructures électriques, systèmes solaires, formation et fourniture.
+           Spécialiste en infrastructures électriques, systèmes solaires, technologies énergétiques, formation et fournitures de matériels électriques.
           </p>
-          
+          <h4 className="mb-6 text-2xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Garant de l’accessibilité et de la sécurité énergétique.
+            </span>
+            <br />
+          </h4>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center animate-fade-in-up animate-delay-400">
             <Button asChild size="lg" className="text-lg hover:scale-105 transition-transform duration-300">
               <Link to="/projects">

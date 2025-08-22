@@ -22,11 +22,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4">
-        <Link to="/" className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-3">
           <div className="flex items-center">
-            <span className="text-xl font-bold text-primary">GUINEA-</span>
-            <span className="text-xl font-bold text-secondary">ENERGY</span>
+            <span className="text-xl font-bold text-primary">GUINEA</span>
+            <span className="ml-3 text-xl font-bold text-secondary">ENERGY</span>
           </div>
+
         </Link>
 
         {/* Desktop Navigation */}
