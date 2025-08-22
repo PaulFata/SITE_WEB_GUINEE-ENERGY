@@ -24,12 +24,8 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-2">
           <div className="flex items-center">
-            <Zap className="h-8 w-8 text-primary" />
-            <img 
-              src="./assets/logo2.png" 
-              alt="GUINEA-ENERGY Logo" 
-              className="h-16 ml-8"
-            />
+            <span className="text-xl font-bold text-primary">GUINEA-</span>
+            <span className="text-xl font-bold text-secondary">ENERGY</span>
           </div>
         </Link>
 

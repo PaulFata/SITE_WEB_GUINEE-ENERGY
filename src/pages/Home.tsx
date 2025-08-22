@@ -36,7 +36,7 @@ const stats = [
   { number: "100+", label: "Projets réalisés" },
   { number: "15", label: "Localités électrifiées" },
   { number: "10+", label: "Années d'expérience" },
-  { number: "50+", label: "Partenaires" }
+  { number: "10+", label: "Partenaires" }
 ];
 
 export default function Home() {
@@ -45,22 +45,37 @@ export default function Home() {
       <Hero />
       
       {/* Stats Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="container px-4">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl font-bold text-primary md:text-4xl">
-                  {stat.number}
-                </div>
-                <div className="text-sm text-muted-foreground md:text-base">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
+        <section className="py-16 bg-muted/30">
+  <div className="container px-4">
+    <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+      {stats.map((stat, index) => (
+        <Card
+          key={index}
+          className="group relative overflow-hidden card-hover animate-fade-in-up animate-delay-100 p-6 flex flex-col items-center justify-center shadow-2xl rounded-2xl bg-gradient-to-br from-primary to-primary/80 border-none transition-transform duration-500 hover:scale-105"
+        >
+          {/* Gradient subtil au hover */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary/70 opacity-0 group-hover:opacity-30 transition-opacity duration-500 rounded-2xl"></div>
+          
+          {/* Contenu */}
+          <div className="relative z-10 flex flex-col items-center">
+            <div className="text-4xl md:text-5xl font-extrabold text-white animate-glow">
+              {stat.number}
+            </div>
+            <div className="text-sm md:text-base text-white mt-2 font-medium">
+              {stat.label}
+            </div>
           </div>
-        </div>
-      </section>
+
+          {/* Barre animée en bas */}
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-white/70 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full"></div>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
 
       {/* Featured Projects */}
       <section className="py-20">
@@ -128,11 +143,15 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                  <Award className="h-8 w-8 text-primary" />
+                <div className="mx-auto mb-4 flex h-12 w-16 items-center justify-center rounded-full bg-primary/10">
+                   <img 
+                      src="./assets/infrac.jpg" 
+                      alt="Infrastructures" 
+                      className="h-10 w-10 object-contain animate-glow"
+                    />
                 </div>
                 <CardTitle>Infrastructures électriques</CardTitle>
               </CardHeader>
@@ -146,7 +165,11 @@ export default function Home() {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
-                  <Award className="h-8 w-8 text-secondary" />
+                 <img 
+                    src="./assets/solaire.png" 
+                    alt="Infrastructures" 
+                    className="h-10 w-10 object-contain animate-glow"
+                  />
                 </div>
                 <CardTitle>Systèmes solaires</CardTitle>
               </CardHeader>
@@ -160,7 +183,11 @@ export default function Home() {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                  <Users className="h-8 w-8 text-primary" />
+                 <img 
+                      src="./assets/formation.png" 
+                      alt="Infrastructures" 
+                      className="h-10 w-10 object-contain animate-glow"
+                    />
                 </div>
                 <CardTitle>Formation</CardTitle>
               </CardHeader>
@@ -174,13 +201,35 @@ export default function Home() {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
-                  <Award className="h-8 w-8 text-secondary" />
+                 <img 
+                      src="./assets/outils.png" 
+                      alt="Infrastructures" 
+                      className="h-10 w-10 object-contain animate-glow"
+                    />
                 </div>
                 <CardTitle>Fourniture</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
                   Fourniture d'équipements électriques et matériels de qualité
+                </p>
+              </CardContent>
+            </Card>
+
+             <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
+                 <img 
+                      src="./assets/innovation.png" 
+                      alt="Infrastructures" 
+                      className="h-10 w-10 object-contain animate-glow"
+                    />
+                </div>
+                <CardTitle>Innovation</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Digitalisation des systèmes de gestions 
                 </p>
               </CardContent>
             </Card>

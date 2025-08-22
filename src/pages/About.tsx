@@ -59,16 +59,22 @@ export default function About() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+      <section className="py-20 bg-gradient-to-br from-primary/20 via-background to-secondary/30">
         <div className="container px-4">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
               Qui sommes-nous ?
             </h1>
-            <p className="text-lg text-muted-foreground md:text-xl">
-              GUINEA-ENERGY est une entreprise guinéenne de référence dans le secteur énergétique, 
-              spécialisée dans les infrastructures électriques et les solutions solaires durables.
-            </p>
+             <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-6xl animate-slide-in-left">
+            <div className="mb-4 flex justify-center animate-bounce-in">
+            <img 
+              src="./assets/logo3.png" 
+              alt="Guinea Energy Logo" 
+              className="h-40 w-auto animate-float"
+            />
+          </div>
+          
+          </h1>
           </div>
         </div>
       </section>
@@ -78,9 +84,6 @@ export default function About() {
         <div className="container px-4">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
             <div>
-              <h2 className="mb-6 text-3xl font-bold text-foreground">
-                Qui sommes nous ?
-              </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   GUINEA ENERGY est une entreprise guinéenne engagée dans le développement, 
@@ -92,7 +95,7 @@ export default function About() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=600&h=400&fit=crop"
+                src="./assets/local.jpeg"
                 alt="Équipe GUINEA-ENERGY au travail"
                 className="rounded-lg shadow-lg"
               />

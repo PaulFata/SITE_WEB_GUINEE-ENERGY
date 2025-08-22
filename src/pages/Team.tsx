@@ -42,7 +42,7 @@ const leadership = [
 const team = [
   {
     name: "Fatoumata SOUMAH",
-    role: "Assistance de Direction",
+    role: "Ingénieure Projets Solaires",
     department: "Technique",
     speciality: "Photovoltaïque",
     experience: "8 ans",
@@ -50,7 +50,7 @@ const team = [
   },
   {
     name: "Mohamed KOUROUMA",
-    role: "Responsable Logistique",
+    role: "Chef de Projets Électrification",
     department: "Technique", 
     speciality: "Réseaux électriques",
     experience: "12 ans",

@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Zap, Sun, Users, Award, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, UtilityPole, Sun, Users, Award, ChevronLeft, ChevronRight, Monitor,SunDim,HardHat } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const heroImages = [
-  "./assets/solaire.jpg",
-  "./assets/tension.jpg",
-  "./assets/enfant.jpg",
-  "./assets/eng.jpg",
+  "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&h=600&fit=crop",
+  "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1200&h=600&fit=crop",
+  "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1200&h=600&fit=crop",
+  "https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1200&h=600&fit=crop"
 ];
 
 export default function Hero() {
@@ -29,61 +29,33 @@ export default function Hero() {
     setCurrentImage((prev) => (prev - 1 + heroImages.length) % heroImages.length);
   };
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/10">
-      {/* Background Image Carousel */}
+    <section className="relative min-h-screen flex items-center bg-white">
+      {/* Arrière-plan moderne avec formes organiques */}
+     
+
+      {/* Motif organique décoratif */}
       <div className="absolute inset-0 z-0">
-        {heroImages.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentImage ? 'opacity-50' : 'opacity-0'
-            }`}
-          >
-            <img 
-              src={image} 
-              alt={`Hero ${index + 1}`}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background/60 to-secondary/30"></div>
+        <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-secondary animate-float"></div>
+        <div className="absolute bottom-20 right-16 w-24 h-24 rounded-full bg-primary animate-bounce-subtle"></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 rounded-full bg-accent-cream/30 animate-pulse-soft"></div>
       </div>
 
-      {/* Carousel Controls */}
-      <button
-        onClick={prevImage}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 backdrop-blur-sm rounded-full p-2 hover:bg-white/30 transition-all duration-300"
-      >
-        <ChevronLeft className="h-6 w-6 text-white" />
-      </button>
-      <button
-        onClick={nextImage}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 backdrop-blur-sm rounded-full p-2 hover:bg-white/30 transition-all duration-300"
-      >
-        <ChevronRight className="h-6 w-6 text-white" />
-      </button>
-
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5 z-0"></div>
+      {/* Éléments décoratifs flottants */}
+      <div className="absolute top-20 right-20 w-20 h-20 border-2 border-accent-cream/30 rounded-full animate-rotate-slow z-5"></div>
+      <div className="absolute bottom-32 left-20 w-12 h-12 bg-secondary rounded-lg animate-float z-5"></div>
       
       <div className="container px-4 py-20 text-center relative z-10">
         <div className="mx-auto max-w-4xl">
-          <div className="mb-8 flex justify-center animate-bounce-in">
+         
+          <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-6xl animate-slide-in-left">
+            <div className="mb-4 flex justify-center animate-bounce-in">
             <img 
-              src="./assets/logo2.png" 
+              src="./assets/logo3.png" 
               alt="Guinea Energy Logo" 
-              className="h-32 w-auto animate-float"
+              className="h-40 w-auto animate-float"
             />
           </div>
           
-          <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-6xl animate-slide-in-left">
-            <span className="text-primary">GUINEA-ENERGY</span>
-            <br />
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-slide-in-right animate-delay-200">
-              Construire l'avenir énergétique
-            </span>
-            <br />
-            <span className="text-secondary animate-slide-in-left animate-delay-400">de la Guinée</span>
           </h1>
           
           <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground sm:text-xl animate-fade-in-up animate-delay-300">
@@ -105,58 +77,130 @@ export default function Hero() {
             </Button>
           </div>
           
-          <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <Card className="group hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up animate-delay-100 bg-white/80 backdrop-blur-sm border-primary/20">
-              <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 group-hover:animate-pulse">
-                  <Zap className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
-                </div>
-                <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">Infrastructures</h3>
-                <p className="text-sm text-muted-foreground">Électriques</p>
+         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5 items-stretch">
+      <Link to="./services">
+        <Card className="group relative overflow-hidden card-hover animate-fade-in-up animate-delay-100 bg-accent-cream/90 backdrop-blur-lg border-none shadow-2xl rounded-2xl h-[220px]">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+          <CardContent className="relative p-4 text-center flex flex-col items-center justify-center h-full">
+            <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/80 group-hover:scale-110 transition-transform duration-500 shadow-md">
+            <img 
+                src="./assets/infrac.jpg" 
+                alt="Infrastructures" 
+                className="h-10 w-10 object-contain animate-glow"
+              />
+            </div>
+            <h3 className="text-lg font-bold text-accent-dark mb-1 group-hover:text-primary transition-colors duration-300">
+              Infrastructures
+            </h3>
+            <p className="text-primary/70 text-sm font-medium">Électriques</p>
+
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full"></div>
+          </CardContent>
+        </Card>
+      </Link>
+      
+      <Link to="./services">
+        <Card className="group relative overflow-hidden card-hover animate-fade-in-up animate-delay-100 bg-accent-cream/90 backdrop-blur-lg border-none shadow-2xl rounded-2xl h-[220px]">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        
+        <CardContent className="relative p-4 text-center flex flex-col items-center justify-center h-full">
+          <div className="mx-auto mb-2 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-secondary to-secondary/80 group-hover:scale-110 transition-transform duration-500 shadow-md">
+              <img 
+                src="./assets/solaire.png" 
+                alt="Infrastructures" 
+                className="h-10 w-10 object-contain animate-glow"
+              />
+            </div>
+          <h3 className="text-lg font-bold text-accent-dark mb-1 group-hover:text-primary transition-colors duration-300">
+            Systèmes
+          </h3>
+          <p className="text-primary/70 text-sm font-medium">Solaires</p>
+          
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full"></div>
+        </CardContent>
+      </Card>
+      </Link>
+      
+
+        <Link to="./services">
+              <Card className="group relative overflow-hidden card-hover animate-fade-in-up animate-delay-100 bg-accent-cream/90 backdrop-blur-lg border-none shadow-2xl rounded-2xl h-[220px]">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <CardContent className="relative p-4 text-center flex flex-col items-center justify-center h-full">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-secondary to-secondary/80 group-hover:scale-110 transition-transform duration-500 shadow-md">
+                   <img 
+                      src="./assets/formation.png" 
+                      alt="Infrastructures" 
+                      className="h-10 w-10 object-contain animate-glow"
+                    />
+                  </div>
+                <h3 className="text-lg font-bold text-accent-dark mb-1 group-hover:text-primary transition-colors duration-300">
+                  Formation
+                </h3>
+                <p className="text-primary/70 text-sm font-medium">Professionnelle</p>
+                
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full"></div>
               </CardContent>
             </Card>
+        </Link>
 
-            <Card className="group hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up animate-delay-200 bg-white/80 backdrop-blur-sm border-secondary/20">
-              <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10 group-hover:bg-secondary/20 transition-colors duration-300 group-hover:animate-pulse">
-                  <Sun className="h-8 w-8 text-secondary group-hover:scale-110 transition-transform duration-300" />
+       <Link to="./services">
+          <Card className="group relative overflow-hidden card-hover animate-fade-in-up animate-delay-100 bg-accent-cream/90 backdrop-blur-lg border-none shadow-2xl rounded-2xl h-[220px]">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <CardContent className="relative p-4 text-center flex flex-col items-center justify-center h-full">
+              <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-secondary to-secondary/80 group-hover:scale-110 transition-transform duration-500 shadow-md">
+                <img 
+                      src="./assets/outils.png" 
+                      alt="Infrastructures" 
+                      className="h-10 w-10 object-contain animate-glow"
+                    />
                 </div>
-                <h3 className="font-semibold text-foreground group-hover:text-secondary transition-colors duration-300">Systèmes</h3>
-                <p className="text-sm text-muted-foreground">Solaires</p>
-              </CardContent>
-            </Card>
+              <h3 className="text-lg font-bold text-accent-dark mb-1 group-hover:text-primary transition-colors duration-300">
+                Fourniture
+              </h3>
+              <p className="text-primary/70 text-sm font-medium">Équipements</p>
+              
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full"></div>
+            </CardContent>
+          </Card>
+        </Link>
 
-            <Card className="group hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up animate-delay-300 bg-white/80 backdrop-blur-sm border-primary/20">
-              <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 group-hover:animate-pulse">
-                  <Users className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+
+        <Link to="./services">
+          <Card className="group relative overflow-hidden card-hover animate-fade-in-up animate-delay-100 bg-accent-cream/90 backdrop-blur-lg border-none shadow-2xl rounded-2xl h-[220px]">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <CardContent className="relative p-4 text-center flex flex-col items-center justify-center h-full">
+                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/80 group-hover:scale-110 transition-transform duration-500 shadow-md">
+               <img 
+                      src="./assets/innovation.png" 
+                      alt="Infrastructures" 
+                      className="h-10 w-10 object-contain animate-glow"
+                    />
                 </div>
-                <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">Formation</h3>
-                <p className="text-sm text-muted-foreground">Professionnelle</p>
-              </CardContent>
-            </Card>
+                <h3 className="text-lg font-bold text-accent-dark mb-1 group-hover:text-primary transition-colors duration-300">
+                  Innovation
+                </h3>
+                <p className="text-primary/70 text-sm font-medium">Digitalisation</p>
+                
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full"></div>
+            </CardContent>
+          </Card>
+        </Link>
 
-            <Card className="group hover:scale-105 hover:shadow-2xl transition-all duration-500 animate-fade-in-up animate-delay-400 bg-white/80 backdrop-blur-sm border-secondary/20">
-              <CardContent className="p-6 text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10 group-hover:bg-secondary/20 transition-colors duration-300 group-hover:animate-pulse">
-                  <Award className="h-8 w-8 text-secondary group-hover:scale-110 transition-transform duration-300" />
-                </div>
-                <h3 className="font-semibold text-foreground group-hover:text-secondary transition-colors duration-300">Fourniture</h3>
-                <p className="text-sm text-muted-foreground">Équipements</p>
-              </CardContent>
-            </Card>
-          </div>
+  
+  
+</div>
 
-          {/* Carousel Indicators */}
-          <div className="flex justify-center space-x-2 mt-8">
-            {heroImages.map((_, index) => (
-              <button
+          {/* Indicateurs de style moderne */}
+          <div className="flex justify-center space-x-3 mt-12">
+            {[...Array(4)].map((_, index) => (
+              <div
                 key={index}
-                onClick={() => setCurrentImage(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentImage 
-                    ? 'bg-primary scale-125' 
-                    : 'bg-white/50 hover:bg-white/80'
+                className={`w-2 h-8 rounded-full transition-all duration-500 ${
+                  index === currentImage % 6
+                    ? 'bg-secondary scale-125 shadow-lg' 
+                    : 'bg-accent-cream/60 hover:bg-accent-cream'
                 }`}
               />
             ))}
