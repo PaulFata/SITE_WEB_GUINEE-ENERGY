@@ -90,7 +90,7 @@ const filliale = [
   {
     title: "Nos filiales",
     icon: <Building2 className="h-8 w-8" />,
-    description: "Ils participent activement à la réalisation de nos projets énergétiques",
+    description: "Elles portent la vision et la stratégie définies pour nos différents projets",
     partners: [
       {
         name: "Pôles Factory",

@@ -11,10 +11,10 @@ const posts = [
   {
     id: 1,
     title: "Lancement du programme d'électrification rurale 2024",
-    excerpt: "GUINEA-ENERGY annonce le démarrage d'un vaste programme d'électrification de 25 villages ruraux dans la région de Faranah.",
+    excerpt: "GUINEA ENERGY annonce le démarrage d'un vaste programme d'électrification de 25 villages ruraux dans la région de Faranah.",
     content: "Nous sommes fiers d'annoncer le lancement de notre programme d'électrification rurale 2024. Ce projet ambitieux vise à connecter 25 villages de la région de Faranah au réseau électrique national...",
     image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop",
-    author: "Direction GUINEA-ENERGY",
+    author: "Direction GUINEA ENERGY",
     date: "2024-01-15",
     category: "Projets communautaires",
     likes: 42,
@@ -38,7 +38,7 @@ const posts = [
     id: 3,
     title: "Partenariat stratégique avec l'Union Européenne",
     excerpt: "Signature d'un accord de coopération pour le développement des énergies renouvelables en Guinée.",
-    content: "GUINEA-ENERGY signe un important partenariat avec l'Union Européenne dans le cadre du programme 'Énergie Durable pour l'Afrique'...",
+    content: "GUINEA ENERGY signe un important partenariat avec l'Union Européenne dans le cadre du programme 'Énergie Durable pour l'Afrique'...",
     image: "https://images.unsplash.com/photo-1521791055366-0d553872125f?w=800&h=600&fit=crop",
     author: "Direction Générale",
     date: "2024-01-05",
@@ -76,7 +76,7 @@ const posts = [
   {
     id: 6,
     title: "Journée porte ouverte : Découvrez nos métiers",
-    excerpt: "GUINEA-ENERGY ouvre ses portes au public pour faire découvrir les métiers de l'énergie.",
+    excerpt: "GUINEA ENERGY ouvre ses portes au public pour faire découvrir les métiers de l'énergie.",
     content: "Dans le cadre de notre engagement pour la promotion des métiers techniques, nous organisons une journée porte ouverte...",
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop",
     author: "Service Communication",
@@ -299,7 +299,7 @@ export default function News() {
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg opacity-90">
             Suivez nos réseaux sociaux et contactez-nous pour ne rien manquer 
-            de l'évolution de GUINEA-ENERGY
+            de l'évolution de GUINEA ENERGY
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Button asChild variant="secondary" size="lg">

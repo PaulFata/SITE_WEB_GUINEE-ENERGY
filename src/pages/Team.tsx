@@ -133,7 +133,7 @@ export default function Team() {
               Notre équipe
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
-              Découvrez les talents qui font la force de GUINEA-ENERGY. 
+              Découvrez les talents qui font la force de GUINEA ENERGY. 
               Une équipe passionnée et experte au service de vos projets énergétiques.
             </p>
           </div>
@@ -264,7 +264,7 @@ export default function Team() {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container px-4 text-center">
           <h2 className="mb-4 text-3xl font-bold">
-            Rejoignez l'équipe GUINEA-ENERGY
+            Rejoignez l'équipe GUINEA ENERGY
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg opacity-90">
             Nous recherchons constamment des talents passionnés pour renforcer notre équipe. 

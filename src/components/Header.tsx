@@ -12,6 +12,7 @@ const navigation = [
   { name: "Actualités", href: "/news" },
   { name: "Équipe", href: "/team" },
   { name: "Partenaires", href: "/partners" },
+  { name: "Galerie", href: "/" },
   { name: "Contact", href: "/contact" },
 ];
 

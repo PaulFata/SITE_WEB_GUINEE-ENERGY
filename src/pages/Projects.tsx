@@ -17,70 +17,57 @@ const categories = [
 const projects = [
   {
     id: 1,
-    title: "Assemblage et levage pylônes 225 kV",
-    description: "Installation de pylônes haute tension pour renforcer le réseau électrique national entre Conakry et Kindia",
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop",
-    location: "Conakry - Kindia",
+    title: "Assemblage et levage des pylônes",
+    description: "Installation de pylônes haute tension pour renforcer le réseau électrique national .",
+    image: "./assets/assemblage.jpg",
+    location: "Guinéé",
     date: "2024",
-    category: "Infrastructure",
+    category: "Électrification",
     impact: "Amélioration de la stabilité du réseau électrique national",
-    details: "Installation de 45 pylônes haute tension sur un tracé de 135 km, renforçant significativement la capacité de transport d'énergie entre les deux principales villes du pays."
+   
   },
   {
     id: 2,
-    title: "Installation solaire à Macenta",
-    description: "Système photovoltaïque de 500 kWc pour zones militaires et communautés locales",
-    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&h=600&fit=crop",
-    location: "Macenta",
-    date: "2023",
+    title: "Installation solaire zone militaire",
+    description: "Système photovoltaïque  pour zones militaires et communautés locales",
+    image: "./assets/installationSolaire.jpg",
+    location: "Guinée",
+    date: "2024",
     category: "Solaire",
-    impact: "Électrification de 200 foyers et installations militaires",
+    impact: "Électrification de  foyers et installations militaires",
     details: "Installation complète comprenant panneaux solaires, onduleurs, systèmes de stockage et réseau de distribution pour alimenter durablement la zone."
   },
   {
     id: 3,
-    title: "Électrification de 15 localités à Kouroussa",
+    title: "Électrification localités de kouroussa",
     description: "Extension du réseau électrique pour améliorer l'accès à l'énergie en zone rurale",
-    image: "./assets/ter.png",
+    image: "./assets/electrificationKouroussa.jpg",
     location: "Kouroussa",
-    date: "2023",
+    date: "",
     category: "Électrification", 
-    impact: "Plus de 3000 habitants raccordés au réseau électrique",
-    details: "Déploiement de 25 km de lignes électriques et installation de 8 postes de transformation pour connecter les villages isolés au réseau national."
+    impact: "Beaucoup  habitants raccordés au réseau électrique",
+    
   },
   {
     id: 4,
-    title: "Réhabilitation réseau MT Labé",
-    description: "Modernisation et renforcement du réseau moyenne tension de la ville de Labé",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&h=600&fit=crop",
-    location: "Labé",
+    title: "Construction de ligne souterraine",
+    description: "Construction d'une ligne souterraine sécurisé",
+    image: "./assets/ligneSou.jpg",
+    location: "Guinée",
     date: "2023",
-    category: "Réhabilitation",
-    impact: "Réduction des coupures de 60% et amélioration de la qualité",
-    details: "Remplacement de 12 km de câbles vétustes, installation de nouveaux transformateurs et mise aux normes du réseau de distribution."
+    category: "Infrastructure",
+    
   },
   {
     id: 5,
-    title: "Formation électriciens Boké",
-    description: "Programme de formation de 30 électriciens certifiés pour la région de Boké",
-    image: "https://cdn.pixabay.com/photo/2014/01/13/10/29/electrician-243309_1280.jpg",
-    location: "Boké",
-    date: "2022",
-    category: "Formation",
-    impact: "30 électriciens certifiés, création d'emplois locaux",
-    details: "Formation théorique et pratique de 6 mois couvrant l'installation, la maintenance et la sécurité électrique selon les standards internationaux."
+    title: "Construction des fondations de pylônes 225Kv",
+    description: "Construction des fondations de pylônes 225Kv",
+    image: "./assets/pylone.jpg",
+    location: "Guinée",
+    date: "2024",
+    category: "Infrastructure",
   },
-  {
-    id: 6,
-    title: "Centrale solaire Kankan",
-    description: "Installation d'une centrale photovoltaïque de 1 MWc pour alimenter le centre-ville",
-    image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800&h=600&fit=crop",
-    location: "Kankan",
-    date: "2022",
-    category: "Solaire",
-    impact: "Alimentation de 500 foyers et commerces du centre-ville",
-    details: "Centrale au sol avec système de suivi solaire, équipée de batteries de stockage pour assurer une alimentation continue 24h/24."
-  }
+  
 ];
 
 export default function Projects() {

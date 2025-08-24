@@ -7,10 +7,11 @@ import { Link } from "react-router-dom";
 const services = [
   {
     icon: <img 
-                src="./assets/infrac.jpg" 
-                alt="Logo infrastructure" 
-                className="h-20 sm:h-32 md:h-40 w-auto animate-float"
-              />,
+  src="./assets/infrac.jpg" 
+  alt="Logo infrastructure" 
+  className="h-8 sm:h-10 md:h-10 w-auto animate-float"
+/>
+,
     title: "Infrastructures électriques",
     description: "Installation, maintenance et réhabilitation de réseaux électriques haute et basse tension",
     features: [
@@ -70,7 +71,7 @@ const services = [
 const processSteps = [
   {
     step: "01",
-    title: "Évaluation des besoins",
+    title: "Évaluation des besoins",  
     description: "Analyse détaillée de votre projet et définition des spécifications techniques"
   },
   {
@@ -111,7 +112,7 @@ export default function Services() {
               Nos services
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
-              GUINEA-ENERGY vous accompagne dans tous vos projets énergétiques avec 
+              GUINEA ENERGY vous accompagne dans tous vos projets énergétiques avec 
               des solutions complètes et sur mesure
             </p>
           </div>
@@ -166,28 +167,26 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 stagger-animation">
-            {processSteps.map((step, index) => (
-              <Card key={index} className="relative overflow-hidden card-hover">
-                <CardHeader>
-                  <div className="flex items-center space-x-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground text-lg font-bold animate-pulse-soft">
-                      {step.step}
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 stagger-animation max-h-[80vh] overflow-y-auto">
+              {processSteps.map((step, index) => (
+                <Card key={index} className="relative overflow-hidden card-hover">
+                  <CardHeader>
+                    <div className="flex items-center space-x-4">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground text-lg font-bold animate-pulse-soft">
+                        {step.step}
+                      </div>
+                      <CardTitle className="text-xl">{step.title}</CardTitle>
                     </div>
-                    <CardTitle className="text-xl">{step.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{step.description}</p>
-                </CardContent>
-                {index < processSteps.length - 1 && (
-                  <div className="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2">
-                    <ArrowRight className="h-8 w-8 text-muted-foreground animate-bounce-subtle" />
-                  </div>
-                )}
-              </Card>
-            ))}
-          </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{step.description}</p>
+                  </CardContent>
+                  
+                </Card>
+              ))}
+
+           </div>
+
         </div>
       </section>
 

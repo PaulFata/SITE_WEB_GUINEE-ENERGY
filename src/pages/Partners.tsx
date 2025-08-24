@@ -1,40 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Star, Quote, Users, Globe, Award } from "lucide-react";
+import { Star, Quote, Users,Handshake, Globe, Award } from "lucide-react";
 
 const partnerCategories = [
+  
   {
-    title: "Partenaires Institutionnels",
-    icon: <Globe className="h-8 w-8" />,
-    description: "Organisations internationales et gouvernementales",
-    partners: [
-      {
-        name: "Union Européenne",
-        logo: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=200&h=100&fit=crop",
-        category: "Coopération Internationale",
-        description: "Financement et accompagnement technique dans le cadre du programme 'Énergie Durable pour l'Afrique'",
-        collaboration: "Depuis 2022"
-      },
-      {
-        name: "Banque Africaine de Développement",
-        logo: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=200&h=100&fit=crop",
-        category: "Financement",
-        description: "Partenaire financier pour les grands projets d'infrastructure énergétique",
-        collaboration: "Depuis 2021"
-      },
-      {
-        name: "Ministère de l'Énergie - Guinée",
-        logo: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=200&h=100&fit=crop",
-        category: "Gouvernement",
-        description: "Partenariat stratégique pour l'électrification rurale et urbaine",
-        collaboration: "Depuis 2020"
-      }
-    ]
-  },
-  {
-    title: "Partenaires Techniques",
-    icon: <Award className="h-8 w-8" />,
-    description: "Fournisseurs de technologies et équipements",
+    title: "Nos references",
+    icon: <Handshake className="h-8 w-8 text-primary" />,
+    description: "ILS NOUS ONT FAIT CONFIANCE",
     partners: [
       {
         name: "EDG",
@@ -44,14 +17,30 @@ const partnerCategories = [
         collaboration: "Depuis 2019"
       },
       {
-        name: "engie", 
-        logo: "./assets/engie.png",
+        name: "Cwe", 
+        logo: "./assets/we.png",
         category: "Panneaux Solaires",
         description: "Partenaire stratégique pour la fourniture de panneaux photovoltaïques haute performance",
         collaboration: "Depuis 2020"
       },
       {
-        name: "Cegelec",
+        name: "SUMEC",
+        logo: "./assets/sumec.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      }
+      ,
+      {
+        name: "enGie",
+        logo: "./assets/engie2.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      }
+      ,
+      {
+        name: "Cegelec ",
         logo: "./assets/cegelec.png",
         category: "Solutions Industrielles",
         description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
@@ -59,58 +48,38 @@ const partnerCategories = [
       }
       ,
       {
-        name: "TODO",
-        logo: "./assets/todo.png",
+        name: "G.E.C.I",
+        logo: "./assets/geci.png",
         category: "Solutions Industrielles",
         description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
         collaboration: "Depuis 2021"
-      }
-      ,
+      },
+
       {
-        name: "Power Transmission ",
-        logo: "./assets/power.png",
+        name: "TOPO GUINEE",
+        logo: "./assets/topo.png",
         category: "Solutions Industrielles",
         description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
         collaboration: "Depuis 2021"
-      }
-      ,
+      },
       {
-        name: "KAMA",
+        name: "KAMA Sa",
         logo: "./assets/kama.png",
+        category: "Solutions Industrielles",
+        description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
+        collaboration: "Depuis 2021"
+      },
+      {
+        name: "POWER TRANSMISSION LIMITED",
+        logo: "./assets/power.png",
         category: "Solutions Industrielles",
         description: "Technologies avancées pour l'automatisation et l'optimisation énergétique",
         collaboration: "Depuis 2021"
       }
     ]
   },
-  {
-    title: "Clients Institutionnels",
-    icon: <Users className="h-8 w-8" />,
-    description: "Grandes organisations et collectivités",
-    partners: [
-      {
-        name: "Électricité de Guinée (EDG)",
-        logo: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=200&h=100&fit=crop",
-        category: "Opérateur National",
-        description: "Collaboration pour la modernisation et l'extension du réseau électrique national",
-        collaboration: "Depuis 2018"
-      },
-      {
-        name: "Compagnie des Bauxites de Guinée",
-        logo: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=200&h=100&fit=crop",
-        category: "Industrie Minière",
-        description: "Solutions énergétiques pour les sites miniers et les communautés locales",
-        collaboration: "Depuis 2019"
-      },
-      {
-        name: "Gouvernorat de Conakry",
-        logo: "https://images.unsplash.com/photo-1559526324-593bc073d938?w=200&h=100&fit=crop",
-        category: "Collectivité",
-        description: "Projets d'éclairage public et d'électrification urbaine",
-        collaboration: "Depuis 2020"
-      }
-    ]
-  }
+
+  
 ];
 
 const testimonials = [
@@ -181,7 +150,7 @@ export default function Partners() {
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
               Découvrez le réseau de confiance qui nous accompagne dans la transformation 
-              énergétique de la Guinée et de l'Afrique de l'Ouest
+              énergétique 
             </p>
           </div>
         </div>
@@ -298,7 +267,7 @@ export default function Partners() {
             Devenez notre partenaire
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground">
-            Vous souhaitez collaborer avec GUINEA-ENERGY ? Explorons ensemble les opportunités 
+            Vous souhaitez collaborer avec GUINEA ENERGY ? Explorons ensemble les opportunités 
             de partenariat pour développer des solutions énergétiques innovantes.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">

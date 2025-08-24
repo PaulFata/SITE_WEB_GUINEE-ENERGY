@@ -6,7 +6,7 @@ const values = [
   {
     icon: <CheckCircle className="h-8 w-8" />,
     title: "Excellence",
-    description: "Nous nous engageons à fournir des services de la plus haute qualité avec des standards d'excellence."
+    description: "Services de haute qualité conformes aux standards internationaux."
   },
   {
     icon: <Heart className="h-8 w-8" />,
@@ -16,7 +16,7 @@ const values = [
   {
     icon: <Users className="h-8 w-8" />,
     title: "Collaboration",
-    description: "Nous travaillons en partenariat étroit avec nos clients pour garantir le succès de chaque projet."
+    description: "Nous travaillons en partenariat étroit avec nos clients pour garantir satisfaction et confiance dans chaque projet."
   },
   {
     icon: <img 
@@ -25,16 +25,11 @@ const values = [
               className="h-10 w-10 object-contain animate-glow"
             />,
     title: "Innovation",
-    description: "Adoption des technologies les plus récentes pour des solutions énergétiques durables et efficaces."
+    description: "nous adoptons des technologies les plus récentes pour des solutions énergétiques durables,efficaces efficientes."
   }
 ];
 
-const certifications = [
-  "Agrément technique du Ministère de l'Énergie",
-  "Certification ISO 9001 en cours",
-  "Membre de l'Association des Entreprises Électriques de Guinée",
-  "Partenaire officiel des programmes d'électrification rurale"
-];
+
 
 const achievements = [
   {
@@ -76,8 +71,15 @@ export default function About() {
                 alt="Guinea Energy Logo" 
                 className="h-20 sm:h-32 md:h-40 w-auto animate-float"
               />
+              
             </div>
           </h1>
+          <h4 className="mb-6 text-2xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Garant de l’accessibilité et de la sécurité énergétique.
+            </span>
+            <br />
+          </h4>
 
           </div>
         </div>
@@ -138,7 +140,7 @@ export default function About() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Sa vision est de devenir un acteur de référence en Afrique de l'Ouest dans la 
+                  Notre vision est de devenir un acteur de référence en Afrique  dans la 
                   transition énergétique, en favorisant l'intégration des énergies renouvelables 
                   et l'efficacité énergétique pour tous.
                 </p>
@@ -156,7 +158,7 @@ export default function About() {
               Nos valeurs
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-              Ses valeurs reposent sur l'innovation, l'excellence opérationnelle, l'intégrité, 
+              Nos valeurs reposent sur l'innovation, l'excellence opérationnelle, l'intégrité, 
               le respect de l'environnement et la responsabilité sociale, avec pour objectif de 
               bâtir un futur énergétique plus sûr, inclusif et respectueux des générations futures.
             </p>
@@ -206,35 +208,6 @@ export default function About() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications */}
-      <section className="py-20">
-        <div className="container px-4">
-          <div className="mx-auto max-w-4xl">
-            <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-bold text-foreground">
-                Certifications et agréments
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Notre conformité aux standards nationaux et internationaux
-              </p>
-            </div>
-            
-            <div className="grid gap-6 md:grid-cols-2">
-              {certifications.map((cert, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <div className="flex-shrink-0">
-                    <Badge variant="secondary" className="p-2">
-                      <Award className="h-4 w-4" />
-                    </Badge>
-                  </div>
-                  <p className="text-muted-foreground">{cert}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
