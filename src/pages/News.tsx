@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Heart, MessageCircle, Calendar, User, ArrowRight } from "lucide-react";
-
+import { Helmet } from "react-helmet";
 const categories = ["Tous", "Énergie", "Formation", "Solaire", "Projets communautaires", "Annonces"];
 
 const posts = [
@@ -117,6 +117,13 @@ export default function News() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Guinea Energy - À propos</title>
+        <meta
+          name="description"
+          content="Guinea Energy : spécialiste en infrastructures électriques, systèmes solaires, technologies énergétiques et formation professionnelle."
+        />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
         <div className="container px-4">

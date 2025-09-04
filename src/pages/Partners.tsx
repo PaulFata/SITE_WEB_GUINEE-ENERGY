@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star, Quote, Users,Handshake, Globe, Award } from "lucide-react";
-
+import { Helmet } from "react-helmet";
 const partnerCategories = [
   
   {
@@ -141,6 +141,13 @@ export default function Partners() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Guinea Energy - À propos</title>
+        <meta
+          name="description"
+          content="Guinea Energy : spécialiste en infrastructures électriques, systèmes solaires, technologies énergétiques et formation professionnelle."
+        />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
         <div className="container px-4">

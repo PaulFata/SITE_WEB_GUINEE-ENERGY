@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail, Clock, Send, MessageSquare } from "lucide-react";
-
+import { Helmet } from "react-helmet";
 const contactInfo = [
   {
     icon: <MapPin className="h-6 w-6" />,
@@ -124,6 +124,13 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Guinea Energy - À propos</title>
+        <meta
+          name="description"
+          content="Guinea Energy : spécialiste en infrastructures électriques, systèmes solaires, technologies énergétiques et formation professionnelle."
+        />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
         <div className="container px-4">

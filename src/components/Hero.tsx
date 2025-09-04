@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, UtilityPole, Sun, Users, Award, ChevronLeft, ChevronRight, Monitor,SunDim,HardHat } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-
+import { Helmet } from "react-helmet";
 const heroImages = [
   "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&h=600&fit=crop",
   "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1200&h=600&fit=crop",
@@ -30,6 +30,13 @@ export default function Hero() {
   };
   return (
     <section className="relative min-h-screen flex items-center bg-white">
+      <Helmet>
+        <title>Guinea Energy - À propos</title>
+        <meta
+          name="description"
+          content="Guinea Energy : spécialiste en infrastructures électriques, systèmes solaires, technologies énergétiques et formation professionnelle."
+        />
+      </Helmet>
       {/* Arrière-plan moderne avec formes organiques */}
      
 

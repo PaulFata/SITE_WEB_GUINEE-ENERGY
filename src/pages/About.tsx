@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Target, Eye, Heart, Award, Users, Zap, Globe } from "lucide-react";
-
+import { Helmet } from "react-helmet";
 const values = [
   {
     icon: <CheckCircle className="h-8 w-8" />,
@@ -57,6 +57,13 @@ const achievements = [
 export default function About() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Guinea Energy - À propos</title>
+        <meta
+          name="description"
+          content="Guinea Energy : spécialiste en infrastructures électriques, systèmes solaires, technologies énergétiques et formation professionnelle."
+        />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/20 via-background to-secondary/30">
         <div className="container px-4">
