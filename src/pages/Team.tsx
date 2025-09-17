@@ -62,11 +62,22 @@ const leadership = [
     linkedin: "Paul Fata Mara"
   },
   {
+    name: "JEAN BAPTISTE DUOLAMOU",
+    role: "Financier ",
+    department: "Responsable Financier",
+    bio: "Fort d’une solide expertise en gestion comptable et contrôle financier,Il supervise la planification budgétaire, le suivi des flux de trésorerie et l’analyse des performances financières, tout en veillant au respect des normes comptables et fiscales",
+    quote: "Chaque décision financière éclaire le chemin stratégique de l’entreprise.",
+    image: "./assets/jean.jpeg",
+    email: "jb.diolamou@guinea-energy.com", 
+    phone: "+224 625 23 95 64",
+    linkedin: "JEAN BAPTISTE DUOLAMOU"
+  }
+  {
     name: "M'MAH AISSATOU CAMARA",
     role: "Comptable",
     department: "Finance",
     bio: "Expert en développement commercial avec une solide expérience dans les partenariats publics-privés et la gestion de projets d'envergure.",
-    quote: "Chaque projet est une opportunité de créer de la valeur partagée.",
+    quote: "La maîtrise des chiffres, c’est la liberté d’agir avec vision.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
     email: "i.camara@guinea-energy.com", 
     phone: "+224 628 70 72 03",
@@ -85,17 +96,7 @@ const leadership = [
     linkedin: ""
   }
   ,
-  {
-    name: "JEAN BAPTISTE DUOLAMOU",
-    role: "Financier ",
-    department: "Commercial",
-    bio: "Expert en développement commercial avec une solide expérience dans les partenariats publics-privés et la gestion de projets d'envergure.",
-    quote: "Chaque projet est une opportunité de créer de la valeur partagée.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    email: "K.daffe@guinea-energy.com", 
-    phone: "+224 622 00 00 03",
-    linkedin: "Kadiatou Daffé"
-  }
+  
 ];
 
 /*const team = [
