@@ -49,18 +49,7 @@ const leadership = [
     linkedin: "Kadiatou Daffé"
   }
   ,
-  {
-    name: "KADIATOU DAFFE",
-    role: "Responsable LOGISTIQUE",
-    department: "Commercial",
-    bio: "Expert en développement commercial avec une solide expérience dans les partenariats publics-privés et la gestion de projets d'envergure.",
-    quote: "Chaque projet est une opportunité de créer de la valeur partagée.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    email: "K.daffe@guinea-energy.com", 
-    phone: "+224 622 00 00 03",
-    linkedin: "Kadiatou Daffé"
-  }
-  ,
+  
   {
     name: "PAUL FATA MARA",
     role: "Responsable IT & Innovation",
