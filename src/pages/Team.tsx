@@ -71,7 +71,7 @@ const leadership = [
     email: "jb.diolamou@guinea-energy.com", 
     phone: "+224 625 23 95 64",
     linkedin: "JEAN BAPTISTE DUOLAMOU"
-  }
+  },
   {
     name: "M'MAH AISSATOU CAMARA",
     role: "Comptable",
