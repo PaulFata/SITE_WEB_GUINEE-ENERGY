@@ -7,14 +7,60 @@ const leadership = [
   {
     name: "MOUSSA FOFANA",
     role: "Directeur Général",
-    department: "Direction",
+    department: "Direction Générale",
     bio: "Ingénieur électricien avec plus de 15 ans d'expérience dans le secteur énergétique africain. Visionnaire du développement durable en Guinée.",
     quote: "Notre mission est de démocratiser l'accès à l'énergie pour tous les Guinéens.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
-    email: "info@guinea–energy.com ",
+    image: "./assets/dg.jpeg",
+    email: "m.fofana@guinea–energy.com ",
     phone: "+224 629 16 21 21",
     linkedin: "Moussa Fofana"
   },
+  {
+    name: "ISATU BAH",
+    role: "Assistance de Direction & commercial",
+    department: "Administration",
+    bio: "Avec une expérience en gestion administrative et commerciale, j’assure la coordination de la direction, la gestion des agendas et le suivi des relations clients et partenaires.",
+    quote: "Chaque projet est une opportunité de créer de la valeur partagée.",
+    image: "./assets/isatou.jpeg",
+    email: "i.bah@guinea-energy.com", 
+    phone: "+224 629 37 13 24",
+    linkedin: "ISATU BAH"
+  },
+  {
+    name: "MAMOUDOU NABE",
+    role: "Responsable des Opérations",
+    department: "Département Opérations / Production",
+    bio: "Responsable des Opérations, je veille à la coordination efficace des activités, à l’optimisation des processus et à l’atteinte des objectifs stratégiques de l’entreprise, tout en garantissant performance et qualité.",
+    quote: "Chaque projet est une opportunité de créer de la valeur partagée.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    email: "m.nabe@guinea-energy.com", 
+    phone: "+224 620 28 83 62",
+    linkedin: "Mamoudou Nabé"
+  },
+  {
+    name: "KADIATOU DAFFE",
+    role: "Responsable LOGISTIQUE",
+    department: "Département Opérations / Logistique",
+    bio: "Elle supervise l’ensemble de la chaîne logistique, depuis la gestion des stocks jusqu’à la livraison, en optimisant les processus pour garantir rapidité, fiabilité et réduction des coûts.",
+    quote: "Chaque projet est une opportunité de créer de la valeur partagée.",
+    image: "./assets/daffe.jpeg",
+    email: "K.daffe@guinea-energy.com", 
+    phone: "+224 622 00 00 03",
+    linkedin: "Kadiatou Daffé"
+  }
+  ,
+  {
+    name: "KADIATOU DAFFE",
+    role: "Responsable LOGISTIQUE",
+    department: "Commercial",
+    bio: "Expert en développement commercial avec une solide expérience dans les partenariats publics-privés et la gestion de projets d'envergure.",
+    quote: "Chaque projet est une opportunité de créer de la valeur partagée.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    email: "K.daffe@guinea-energy.com", 
+    phone: "+224 622 00 00 03",
+    linkedin: "Kadiatou Daffé"
+  }
+  ,
   {
     name: "PAUL FATA MARA",
     role: "Responsable IT & Innovation",
@@ -22,27 +68,51 @@ const leadership = [
     bio: "Ingénieur en génie logiciel, sofware developper et  réseaux intelligents.",
     quote: "L'innovation technologique est la clé de notre transition énergétique.",
     image: "./assets/fata.jpeg",
-    email: "fatamara001@guinea-energy.gn",
+    email: "p.fatamara@guinea-energy.com",
     phone: "+224 621 56 08 79",
     linkedin: "Paul Fata Mara"
   },
   {
-    name: "Ibrahima CAMARA",
-    role: "Directeur Commercial",
+    name: "M'MAH AISSATOU CAMARA",
+    role: "Comptable",
+    department: "Finance",
+    bio: "Expert en développement commercial avec une solide expérience dans les partenariats publics-privés et la gestion de projets d'envergure.",
+    quote: "Chaque projet est une opportunité de créer de la valeur partagée.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    email: "i.camara@guinea-energy.com", 
+    phone: "+224 628 70 72 03",
+    linkedin: "M'MAH AISSATOU CAMARA"
+  }
+  ,
+  {
+    name: "MORY TOURE",
+    role: "Responsable LOGISTIQUE",
     department: "Commercial",
     bio: "Expert en développement commercial avec une solide expérience dans les partenariats publics-privés et la gestion de projets d'envergure.",
     quote: "Chaque projet est une opportunité de créer de la valeur partagée.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    email: "i.camara@guinea-energy.gn", 
+    email: "m.toure@guinea-energy.com", 
+    phone: "+224 625 39 28 21",
+    linkedin: ""
+  }
+  ,
+  {
+    name: "JEAN BAPTISTE DUOLAMOU",
+    role: "Financier ",
+    department: "Commercial",
+    bio: "Expert en développement commercial avec une solide expérience dans les partenariats publics-privés et la gestion de projets d'envergure.",
+    quote: "Chaque projet est une opportunité de créer de la valeur partagée.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    email: "K.daffe@guinea-energy.com", 
     phone: "+224 622 00 00 03",
-    linkedin: "ibrahima-camara-business"
+    linkedin: "Kadiatou Daffé"
   }
 ];
 
-const team = [
+/*const team = [
   {
-    name: "Fatoumata SOUMAH",
-    role: "Ingénieure Projets Solaires",
+    name: "Kadiatou Daffé",
+    role: "Responsable IT",
     department: "Technique",
     speciality: "Photovoltaïque",
     experience: "8 ans",
@@ -112,7 +182,7 @@ const team = [
     experience: "4 ans",
     image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=400&h=400&fit=crop"
   }
-];
+];*/
 
 const departments = [
   { name: "Direction", count: 1, color: "primary" },
@@ -169,18 +239,18 @@ export default function Team() {
       </section>
 
       {/* Leadership Team */}
-      <section className="py-20">
+      <section className="py-10">
         <div className="container px-4">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-bold text-foreground">
-              Direction générale
+              Direction Générale
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
               L'équipe dirigeante qui guide GUINEA-ENERGY vers l'excellence et l'innovation
             </p>
           </div>
 
-          <div className="grid gap-8 lg:grid-cols-3 stagger-animation">
+          <div className="grid gap-6 lg:grid-cols-4 stagger-animation">
             {leadership.map((leader, index) => (
               <Card key={index} className="overflow-hidden card-hover group">
                 <div className="aspect-square overflow-hidden relative">
@@ -219,8 +289,8 @@ export default function Team() {
         </div>
       </section>
 
-      {/* Team Members */}
-      <section className="py-20 bg-muted/30">
+      {/* Team Members 
+      /* <section className="py-20 bg-muted/30">
         <div className="container px-4">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-bold text-foreground">
@@ -265,7 +335,7 @@ export default function Team() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Join Us CTA */}
       <section className="py-20 bg-primary text-primary-foreground">
