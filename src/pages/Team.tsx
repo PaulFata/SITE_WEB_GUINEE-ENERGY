@@ -78,7 +78,7 @@ const leadership = [
     department: "Finance",
     bio: "Expert en développement commercial avec une solide expérience dans les partenariats publics-privés et la gestion de projets d'envergure.",
     quote: "La maîtrise des chiffres, c’est la liberté d’agir avec vision.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    image: "./assets/camara.jpeg",
     email: "i.camara@guinea-energy.com", 
     phone: "+224 628 70 72 03",
     linkedin: "M'MAH AISSATOU CAMARA"
