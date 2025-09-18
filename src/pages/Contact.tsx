@@ -13,8 +13,8 @@ const contactInfo = [
     icon: <MapPin className="h-6 w-6" />,
     title: "Adresse",
     details: [
-      "Nongo-Carrefour Télémilé",
-      "Ratoma, Conakry",
+      "Belle vue",
+      "Dixinn, Conakry",
       "République de Guinée"
     ]
   },
@@ -22,26 +22,25 @@ const contactInfo = [
     icon: <Phone className="h-6 w-6" />,
     title: "Téléphones",
     details: [
-      "+224 622 00 00 00",
-      "+224 664 00 00 00",
-      "+224 628 00 00 00"
+      "+224 610 36 94 94",
+
     ]
   },
   {
     icon: <Mail className="h-6 w-6" />,
     title: "Emails",
     details: [
-      "contact@guinea-energy.gn",
-      "info@guinea-energy.gn",
-      "commercial@guinea-energy.gn"
+      "info@guinea-energy.com",
+      "i.bah@guinea-energy.com",
+      "m.fofana@guinea-energy.com"
     ]
   },
   {
     icon: <Clock className="h-6 w-6" />,
     title: "Horaires d'ouverture",
     details: [
-      "Lundi - Vendredi : 8h - 18h",
-      "Samedi : 8h - 13h",
+      "Lundi - Vendredi : 8h - 17h",
+      "Samedi : Fermé",
       "Dimanche : Fermé"
     ]
   }
@@ -319,7 +318,7 @@ export default function Contact() {
                 <CardContent className="p-0">
                   <div className="aspect-video bg-muted/30 flex items-center justify-center">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.158397134567!2d-13.577829!3d9.641185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMzgnMjguMyJOIDEzwrAzNCczOS4zIlc!5e0!3m2!1sfr!2sgn!4v1640000000000!5m2!1sfr!2sgn"
+                      src="./assets/image.png"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
@@ -346,7 +345,7 @@ export default function Contact() {
                       <Phone className="h-5 w-5 text-primary" />
                       <div>
                         <div className="font-medium">Appel direct</div>
-                        <div className="text-sm text-muted-foreground">+224 622 00 00 00</div>
+                        <div className="text-sm text-muted-foreground">+224 610 36 94 94</div>
                       </div>
                     </a>
                     
@@ -357,7 +356,7 @@ export default function Contact() {
                       <Mail className="h-5 w-5 text-primary" />
                       <div>
                         <div className="font-medium">Email direct</div>
-                        <div className="text-sm text-muted-foreground">contact@guinea-energy.gn</div>
+                        <div className="text-sm text-muted-foreground">info@guinea-energy.com</div>
                       </div>
                     </a>
                   </div>
@@ -378,10 +377,10 @@ export default function Contact() {
                     className="flex items-center space-x-2 font-semibold text-secondary hover:text-secondary/80 transition-colors"
                   >
                     <Phone className="h-5 w-5" />
-                    <span>+224 628 00 00 00</span>
+                    <span>+224 610 36 94 94</span>
                   </a>
                   <p className="text-sm text-muted-foreground mt-2">
-                    Disponible 24h/24, 7j/7
+                    Disponible 24h/24, 5j/7
                   </p>
                 </CardContent>
               </Card>
