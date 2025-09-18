@@ -76,7 +76,7 @@ const leadership = [
     name: "M'MAH AISSATOU CAMARA",
     role: "Comptable",
     department: "Finance",
-    bio: "Expert en développement commercial avec une solide expérience dans les partenariats publics-privés et la gestion de projets d'envergure.",
+    bio: " Comptable expérimentée avec plus de 4 ans d’expérience dans la gestion financière et la comptabilité d’entreprise. Spécialisée dans la tenue de comptes, l’analyse financière et la préparation des déclarations fiscales, elle accompagne les entreprises dans la maîtrise de leur budget et l’optimisation de leurs ressources.",
     quote: "La maîtrise des chiffres, c’est la liberté d’agir avec vision.",
     image: "./assets/camara.jpeg",
     email: "i.camara@guinea-energy.com", 
