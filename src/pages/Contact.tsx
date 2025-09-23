@@ -339,7 +339,7 @@ export default function Contact() {
                 <CardContent className="space-y-4">
                   <div className="space-y-3">
                     <a
-                      href="tel:+224622000000"
+                      href="tel:+224610369494"
                       className="flex items-center space-x-3 p-3 rounded-lg border hover:bg-muted/50 transition-colors"
                     >
                       <Phone className="h-5 w-5 text-primary" />
@@ -350,7 +350,7 @@ export default function Contact() {
                     </a>
                     
                     <a
-                      href="mailto:contact@guinea-energy.gn"
+                      href="mailto:info@guinea-energy.com"
                       className="flex items-center space-x-3 p-3 rounded-lg border hover:bg-muted/50 transition-colors"
                     >
                       <Mail className="h-5 w-5 text-primary" />
@@ -373,7 +373,7 @@ export default function Contact() {
                     Pour les interventions d'urgence (pannes, incidents de sécurité) :
                   </p>
                   <a
-                    href="tel:+224628000000"
+                    href="tel:+224610369494"
                     className="flex items-center space-x-2 font-semibold text-secondary hover:text-secondary/80 transition-colors"
                   >
                     <Phone className="h-5 w-5" />

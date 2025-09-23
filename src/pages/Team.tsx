@@ -32,7 +32,7 @@ const leadership = [
     department: "Département Opérations / Production",
     bio: "Responsable des Opérations, je veille à la coordination efficace des activités, à l’optimisation des processus et à l’atteinte des objectifs stratégiques de l’entreprise, tout en garantissant performance et qualité.",
     quote: "Chaque projet est une opportunité de créer de la valeur partagée.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    image: "./assets/nabe.jpeg",
     email: "m.nabe@guinea-energy.com", 
     phone: "+224 620 28 83 62",
     linkedin: "Mamoudou Nabé"
@@ -67,7 +67,7 @@ const leadership = [
     department: "Responsable Financier",
     bio: "Fort d’une solide expertise en gestion comptable et contrôle financier,Il supervise la planification budgétaire, le suivi des flux de trésorerie et l’analyse des performances financières, tout en veillant au respect des normes comptables et fiscales",
     quote: "Chaque décision financière éclaire le chemin stratégique de l’entreprise.",
-    image: "./assets/jean.jpeg",
+    image: "./assets/jean.jpg",
     email: "jb.diolamou@guinea-energy.com", 
     phone: "+224 625 23 95 64",
     linkedin: "JEAN BAPTISTE DUOLAMOU"
