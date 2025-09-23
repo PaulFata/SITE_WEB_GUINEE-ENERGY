@@ -67,7 +67,7 @@ const leadership = [
     department: "Responsable Financier",
     bio: "Fort d’une solide expertise en gestion comptable et contrôle financier,Il supervise la planification budgétaire, le suivi des flux de trésorerie et l’analyse des performances financières, tout en veillant au respect des normes comptables et fiscales",
     quote: "Chaque décision financière éclaire le chemin stratégique de l’entreprise.",
-    image: "./assets/jean.jpg",
+    image: "./assets/JEAN.jpg",
     email: "jb.diolamou@guinea-energy.com", 
     phone: "+224 625 23 95 64",
     linkedin: "JEAN BAPTISTE DUOLAMOU"
